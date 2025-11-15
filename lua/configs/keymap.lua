@@ -28,3 +28,15 @@ vim.keymap.set('n', '<M-J>', '<C-w>-')
 -- Word wrap visual movement
 vim.keymap.set('n', 'j', 'gj')
 vim.keymap.set('n', 'k', 'gk')
+
+-- Recenter after half-page up/down
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+
+-- Recenter after search
+vim.keymap.set('n', 'n', 'nzzzv')
+vim.keymap.set('n', 'N', 'Nzzzv')
+
+-- Recenter after * and #
+vim.keymap.set('n', '*', '*zzzv')
+vim.keymap.set('n', '#', '#zzzv')
