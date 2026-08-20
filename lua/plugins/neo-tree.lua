@@ -9,6 +9,7 @@ return {
     'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
     'MunifTanjim/nui.nvim',
     '3rd/image.nvim',
+    's1n7ax/nvim-window-picker', -- lets 'w' open a node in a picked window
   },
   cmd = 'Neotree',
   keys = {
@@ -47,6 +48,7 @@ return {
           ['<leader>e'] = 'close_window',
           ['l'] = 'open',
           ['h'] = 'close_node',
+          ['w'] = 'open_with_window_picker',
           ['<space>'] = 'none',
           ['Y'] = {
             function(state)

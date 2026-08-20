@@ -7,16 +7,14 @@ return {
         mappings = true,
       },
 
-      -- TODO: Update which-key
       -- Document existing key chains
       spec = {
-        { '<leader>c', group = 'Code', mode = { 'n', 'x' } },
-        { '<leader>d', group = 'Document' },
+        { '<leader>d', group = 'Debug' },
         { '<leader>l', group = 'LSP' },
         { '<leader>s', group = 'Search' },
         { '<leader>g', group = 'Git' },
         { '<leader>gh', group = 'Git Hunk' },
-        { '<leader>t', group = 'Toggle Opts' },
+        { '<leader>t', group = 'Toggle' },
         { '<leader>x', group = 'Trouble' },
         { '<leader>b', group = 'Buffer' },
         { '<leader>bs', group = 'Buffer Sort' },

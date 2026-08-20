@@ -26,6 +26,12 @@ return {
       -- [[ Configure Telescope ]]
       -- See `:help telescope` and `:help telescope.setup()`
       require('telescope').setup {
+        defaults = {
+          -- The previewer's treesitter highlighter targets nvim-treesitter's
+          -- old API (ft_to_lang/get_parser), which the 'main' branch dropped.
+          -- Fall back to regex/:syntax highlighting in previews instead.
+          preview = { treesitter = false },
+        },
         extensions = {
           ['ui-select'] = {
             require('telescope.themes').get_dropdown(),
